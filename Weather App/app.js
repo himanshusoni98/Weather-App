@@ -20,23 +20,21 @@ async function checkWeather(city){
 		weatherIcon.src = "clouds.png";
 	}
 	else if(data.weather[0].main == "Clear"){
-		weatherIcon.src = "clear.png";
+		weatherIcon.src = "Weather App/clear.png";
 	}
 	else if(data.weather[0].main == "Rain"){
-		weatherIcon.src = "rain.png";
+		weatherIcon.src = "Weather App/rain.png";
 	}
 	else if(data.weather[0].main == "Drizzle"){
-		weatherIcon.src = "drizzle.png";
+		weatherIcon.src = "Weather App/drizzle.png";
 	}
 	else if(data.weather[0].main == "Mist"){
-		weatherIcon.src = "mist.png";
+		weatherIcon.src = "Weather App/mist.png";
 	}
 	else if(data.weather[0].main == "Snow"){
-		searchIcon.src = "snow.png";
+		searchIcon.src = "Weather App/snow.png";
 	}
-	else{
-
-	}
+	
 }
 btn.addEventListener("click",()=>{
     checkWeather(searchText.value);
